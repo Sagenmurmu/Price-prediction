@@ -2,11 +2,11 @@ import pandas as pd
 import pickle as pk
 import streamlit as st
 
-model = pk.load(open('C:\\Users\\VICTUS\\OneDrive\\Documents\\House_price_prediction\\House_prediction_model.pkl', 'rb'))
+model = pk.load(open('C:\\Users\\VICTUS\\OneDrive\\Documents\\House_price_prediction\\Price-prediction\\House_prediction_model.pkl', 'rb'))
 
 
 st.header('Bangalore House Price Prediction')
-data = pd.read_csv('C:\\Users\\VICTUS\\OneDrive\\Documents\\House_price_prediction\\Cleaned_data.csv')
+data = pd.read_csv('C:\\Users\\VICTUS\\OneDrive\\Documents\\House_price_prediction\\Price-prediction\\Cleaned_data.csv')
 
 
 loc = st.selectbox('Choose the location', data['location'].unique())
